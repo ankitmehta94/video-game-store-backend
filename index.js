@@ -18,6 +18,7 @@ function improveImageQuality(string, initial, final){
 	return string.replace(inital, final);
 }
 app.get('/games',(req, res)=>{
+	
 	client.games({
     fields: 'name,cover,aggregated_rating', // Return all fields
     limit: 12, // Limit to 5 results
